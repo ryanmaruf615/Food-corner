@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.file-input-orange::file-selector-button {
+  background-color: #fa8b3c; /* Tailwind's orange-500 */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.file-input-orange::file-selector-button:hover {
+  background-color: #ea580c; /* Tailwind's orange-600 */
+}
+
+/* scroll style */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ff9f43 #e5e7eb; /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Light gray background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff9f43; /* Orange thumb */
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
